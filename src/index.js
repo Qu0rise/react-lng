@@ -79,11 +79,11 @@ console.log(val4);
 // };
 // console.log(func2("func2です"));
 
-const func2 = (str) => {
-  return str;
-};
+// const func2 = (str) => {
+//   return str;
+// };
 
-console.log(func2("hoge!"));
+// console.log(func2("hoge!"));
 // const func3 = (num1, num2) => {
 //   return num1 + num2;
 // };
@@ -239,27 +239,35 @@ console.log(func2("hoge!"));
  */
 // truthy、falsyについて
 // "ABC" 0 10 undefined null false NaN "" [] {}
-const val = "ABC";
+// const val = 0;
+// const val = 10;
+const val = undefined;
+// const val = null;
+// const val = false;
+// const val = NaN;
+// const val = "";
+// const val = [];
+// const val = {};
 if (val) {
   console.log("valはtruthyです");
 } else {
   console.log("valはfalsyです");
 }
 
-const flag1 = true;
-const flag2 = false;
+// const flag1 = true;
+// const flag2 = false;
 
-if (flag1 || flag2) {
-  console.log("1か2はtrueになります");
-}
-if (flag1 && flag2) {
-  console.log("1も2もtrueになります");
-}
+// if (flag1 || flag2) {
+//   console.log("1か2はtrueになります");
+// }
+// if (flag1 && flag2) {
+//   console.log("1も2もtrueになります");
+// }
 
-// || は左側がtruthyの時その時点で返却する
-const num = null;
-const fee = num || "金額未設定です";
-console.log(fee);
+// // || は左側がtruthyの時その時点で返却する
+// const num = null;
+// const fee = num || "金額未設定です";
+// console.log(fee);
 
 // && は左側がfalsyの時その時点で返却する
 // const num2 = 100;
